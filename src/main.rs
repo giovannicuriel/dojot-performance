@@ -1,3 +1,8 @@
+extern crate hyper;
+extern crate futures;
+
+mod http_listener;
+
 fn main() {
-    println!("Hello, world!");
+    http_listener::start_server();
 }
